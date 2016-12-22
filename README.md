@@ -19,9 +19,9 @@ Environment
 
 MXAdsBannerView(横幅广告类)
 
-MXAdsBannerView(Activity activity,String slotId, ADSize adSize)
+MXAdsBannerView(Context context,String slotId, ADSize adSize)
 说明：横幅广告构造函数，初始化广告位，广告栏大小等信息
-参数：activity （当前activity的实例，必填，类型:Activity）
+参数：context （当前activity的上下文，必填，类型:Context）
             slotId （广告位Id，必填，类型:String）
             ADSize （广告的大小，必填，类型:枚举）
 
@@ -57,9 +57,9 @@ adClose()
 
 MXSplashAd(开屏广告类)
 
-MXSplashAd(Context context,String slotId，boolean isFull)
+MXSplashAd(Activity activity,String slotId，boolean isFull)
 说明：开屏广告初始化
-参数：context （上下文，必填，类型: Context）
+参数：activity （上下文，必填，类型: Activity）
            slotId （广告位id，必填，类型:String）
            isFull （是否全屏，必填，类型:boolean）
 
